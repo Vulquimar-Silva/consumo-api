@@ -14,7 +14,7 @@ Criar uma API:
 
 Consumir API:
 - [x] Utilizar o React CDN
-- [x] Consumir nossa API com o fetch
+- [x] Consumir nossa API com o axios
 - [x] Usar try/catch
 - [x] mostrar resposta na tela
 
