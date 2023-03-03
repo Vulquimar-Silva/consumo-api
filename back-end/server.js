@@ -7,17 +7,32 @@ app.use(cors())
 const port = 5555
 
 app.get('/', async(req, res) => {
-    return res.json({ message: 'Para testes use as rotas /users ou /albums'})
+    try {
+        return res.json({ message: 'Para acessar os dados use as rotas /users ou /albums'})
+    } catch (error) {
+        console.error(error)
+    }
 })
 
 app.get('/users', async(req, res) => {
-    const {data} = await axios('https://jsonplaceholder.typicode.com/users')
-    return res.json(data)
+    try {
+        const {data} = await axios('https://jsonplaceholder.typicode.com/users')
+        return res.json(data)
+    } catch (error) {
+        console.error(error)
+    }
+
 })
 
 app.get('/albums', async(req, res) => {
-    const {data} = await axios('https://jsonplaceholder.typicode.com/albums')
-    return res.json(data)
+
+    try {
+        const {data} = await axios('https://jsonplaceholder.typicode.com/albums')
+        return res.json(data)       
+    } catch (error) {
+        console.error(error)
+    }
+
 })
 
 // Usando FETCH para consumir a API jsonplaceholder
