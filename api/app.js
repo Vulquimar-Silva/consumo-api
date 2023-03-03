@@ -8,6 +8,10 @@ const port = 3333
 app.use(express.json())
 app.use(cors())
 
+app.get('/', (req, res) => {
+    return res.json({ message: 'Acesse a rota /users para encontrar os dados'})
+})
+
 app.get('/users', (req, res) => {
     return res.json(data)
 })

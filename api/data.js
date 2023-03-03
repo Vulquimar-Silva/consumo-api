@@ -7,26 +7,26 @@ module.exports = [
     },
     { 
         id: 2,
-        name: 'Nayara',
+        name: 'Jubiratan',
         position: 'Front-end',
         age: 31
         
     },
     { 
         id: 3,
-        name: 'Maria',
+        name: 'Libertino',
         position: 'Back-end',
         age: 70
     },
     { 
         id: 4,
-        name: 'Mirian',
+        name: 'Jucicleide',
         position: 'Back-end',
         age: 56
     },
     { 
         id: 5,
-        name: 'Joseph',
+        name: 'Lynildes',
         position: 'Fullstack',
         age: 45
     }
