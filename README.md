@@ -1,4 +1,4 @@
-# Criar API e Consumir no Front e no Back
+# Projeto simples para ensinar a consumir uma API no Front e no Back
 
 ## API
 
